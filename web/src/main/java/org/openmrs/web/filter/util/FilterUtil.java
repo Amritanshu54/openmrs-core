@@ -28,6 +28,14 @@ import org.slf4j.LoggerFactory;
  */
 public class FilterUtil {
 	
+	/*
+	Utility classes should not have public constructors.
+        Utility classes, which are a collection of static members, are not meant to be instantiated.
+	*/
+	
+	private FilterUtil() {
+        }
+	
 	private static final Logger log = LoggerFactory.getLogger(FilterUtil.class);
 	
 	public static final String LOCALE_ATTRIBUTE = "locale";
